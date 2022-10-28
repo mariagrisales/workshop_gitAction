@@ -10,3 +10,7 @@ jobs:
     steps:
       - name: imprimir
         run: echo "hola mundo, step imprimir"
+      - name: clone repo
+        run: git clone https://${{github.actor}}:${{github.token}}@github.com/mariagrisales/workshop_gitAction.git
+      - name: view
+        run: ls -lha
