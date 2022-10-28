@@ -16,7 +16,8 @@ jobs:
         run: ls -lha
 
   actioncheckout:
-    runs-on: debian-latest
+    needs: [holamundojob]    
+    runs-on: ubuntu-latest
     steps:
       - name: ejecutar github action checkout
         uses: actions/checkout@v3
