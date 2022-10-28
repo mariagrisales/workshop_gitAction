@@ -1,0 +1,12 @@
+name: holamundoworkflow
+on: 
+  push:
+    branches:
+      - "main"
+
+jobs:
+  holamundojob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: imprimir
+        run: echo "hola mundo, step imprimir"
